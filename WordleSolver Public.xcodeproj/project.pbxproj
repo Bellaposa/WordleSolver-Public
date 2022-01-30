@@ -11,7 +11,20 @@
 		89B6D91527A6FC7F00BE6E05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B6D91427A6FC7F00BE6E05 /* ContentView.swift */; };
 		89B6D91727A6FC8200BE6E05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89B6D91627A6FC8200BE6E05 /* Assets.xcassets */; };
 		89B6D91A27A6FC8200BE6E05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89B6D91927A6FC8200BE6E05 /* Preview Assets.xcassets */; };
+		89B6D92327A6FCD000BE6E05 /* big5.txt in Resources */ = {isa = PBXBuildFile; fileRef = 89B6D92227A6FCD000BE6E05 /* big5.txt */; };
+		89B6D92527A6FCE600BE6E05 /* SolverVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B6D92427A6FCE600BE6E05 /* SolverVM.swift */; };
+		89B6D92D27A6FDAA00BE6E05 /* WordleSolver_PublicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B6D92C27A6FDAA00BE6E05 /* WordleSolver_PublicTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89B6D92E27A6FDAA00BE6E05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89B6D90727A6FC7F00BE6E05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89B6D90E27A6FC7F00BE6E05;
+			remoteInfo = "WordleSolver Public";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		89B6D90F27A6FC7F00BE6E05 /* WordleSolver Public.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WordleSolver Public.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,10 +33,21 @@
 		89B6D91627A6FC8200BE6E05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89B6D91927A6FC8200BE6E05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		89B6D91B27A6FC8200BE6E05 /* WordleSolver_Public.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WordleSolver_Public.entitlements; sourceTree = "<group>"; };
+		89B6D92227A6FCD000BE6E05 /* big5.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = big5.txt; sourceTree = "<group>"; };
+		89B6D92427A6FCE600BE6E05 /* SolverVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolverVM.swift; sourceTree = "<group>"; };
+		89B6D92A27A6FDAA00BE6E05 /* WordleSolver PublicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WordleSolver PublicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89B6D92C27A6FDAA00BE6E05 /* WordleSolver_PublicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleSolver_PublicTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		89B6D90C27A6FC7F00BE6E05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89B6D92727A6FDAA00BE6E05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				89B6D91127A6FC7F00BE6E05 /* WordleSolver Public */,
+				89B6D92B27A6FDAA00BE6E05 /* WordleSolver PublicTests */,
 				89B6D91027A6FC7F00BE6E05 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				89B6D90F27A6FC7F00BE6E05 /* WordleSolver Public.app */,
+				89B6D92A27A6FDAA00BE6E05 /* WordleSolver PublicTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,11 +78,13 @@
 		89B6D91127A6FC7F00BE6E05 /* WordleSolver Public */ = {
 			isa = PBXGroup;
 			children = (
+				89B6D92127A6FC9900BE6E05 /* Dictionaries */,
 				89B6D91227A6FC7F00BE6E05 /* WordleSolver_PublicApp.swift */,
 				89B6D91427A6FC7F00BE6E05 /* ContentView.swift */,
-				89B6D91627A6FC8200BE6E05 /* Assets.xcassets */,
 				89B6D91B27A6FC8200BE6E05 /* WordleSolver_Public.entitlements */,
+				89B6D91627A6FC8200BE6E05 /* Assets.xcassets */,
 				89B6D91827A6FC8200BE6E05 /* Preview Content */,
+				89B6D92427A6FCE600BE6E05 /* SolverVM.swift */,
 			);
 			path = "WordleSolver Public";
 			sourceTree = "<group>";
@@ -67,6 +95,22 @@
 				89B6D91927A6FC8200BE6E05 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		89B6D92127A6FC9900BE6E05 /* Dictionaries */ = {
+			isa = PBXGroup;
+			children = (
+				89B6D92227A6FCD000BE6E05 /* big5.txt */,
+			);
+			path = Dictionaries;
+			sourceTree = "<group>";
+		};
+		89B6D92B27A6FDAA00BE6E05 /* WordleSolver PublicTests */ = {
+			isa = PBXGroup;
+			children = (
+				89B6D92C27A6FDAA00BE6E05 /* WordleSolver_PublicTests.swift */,
+			);
+			path = "WordleSolver PublicTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -89,6 +133,24 @@
 			productReference = 89B6D90F27A6FC7F00BE6E05 /* WordleSolver Public.app */;
 			productType = "com.apple.product-type.application";
 		};
+		89B6D92927A6FDAA00BE6E05 /* WordleSolver PublicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89B6D93027A6FDAA00BE6E05 /* Build configuration list for PBXNativeTarget "WordleSolver PublicTests" */;
+			buildPhases = (
+				89B6D92627A6FDAA00BE6E05 /* Sources */,
+				89B6D92727A6FDAA00BE6E05 /* Frameworks */,
+				89B6D92827A6FDAA00BE6E05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89B6D92F27A6FDAA00BE6E05 /* PBXTargetDependency */,
+			);
+			name = "WordleSolver PublicTests";
+			productName = "WordleSolver PublicTests";
+			productReference = 89B6D92A27A6FDAA00BE6E05 /* WordleSolver PublicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -101,6 +163,10 @@
 				TargetAttributes = {
 					89B6D90E27A6FC7F00BE6E05 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					89B6D92927A6FDAA00BE6E05 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 89B6D90E27A6FC7F00BE6E05;
 					};
 				};
 			};
@@ -118,6 +184,7 @@
 			projectRoot = "";
 			targets = (
 				89B6D90E27A6FC7F00BE6E05 /* WordleSolver Public */,
+				89B6D92927A6FDAA00BE6E05 /* WordleSolver PublicTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,7 +195,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				89B6D91A27A6FC8200BE6E05 /* Preview Assets.xcassets in Resources */,
+				89B6D92327A6FCD000BE6E05 /* big5.txt in Resources */,
 				89B6D91727A6FC8200BE6E05 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89B6D92827A6FDAA00BE6E05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +216,27 @@
 			files = (
 				89B6D91527A6FC7F00BE6E05 /* ContentView.swift in Sources */,
 				89B6D91327A6FC7F00BE6E05 /* WordleSolver_PublicApp.swift in Sources */,
+				89B6D92527A6FCE600BE6E05 /* SolverVM.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89B6D92627A6FDAA00BE6E05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89B6D92D27A6FDAA00BE6E05 /* WordleSolver_PublicTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89B6D92F27A6FDAA00BE6E05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89B6D90E27A6FC7F00BE6E05 /* WordleSolver Public */;
+			targetProxy = 89B6D92E27A6FDAA00BE6E05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		89B6D91C27A6FC8200BE6E05 /* Debug */ = {
@@ -312,6 +404,38 @@
 			};
 			name = Release;
 		};
+		89B6D93127A6FDAA00BE6E05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bellaposa.WordleSolver-PublicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordleSolver Public.app/Contents/MacOS/WordleSolver Public";
+			};
+			name = Debug;
+		};
+		89B6D93227A6FDAA00BE6E05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "bellaposa.WordleSolver-PublicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WordleSolver Public.app/Contents/MacOS/WordleSolver Public";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +453,15 @@
 			buildConfigurations = (
 				89B6D91F27A6FC8200BE6E05 /* Debug */,
 				89B6D92027A6FC8200BE6E05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89B6D93027A6FDAA00BE6E05 /* Build configuration list for PBXNativeTarget "WordleSolver PublicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89B6D93127A6FDAA00BE6E05 /* Debug */,
+				89B6D93227A6FDAA00BE6E05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
